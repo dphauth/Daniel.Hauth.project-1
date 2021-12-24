@@ -72,23 +72,28 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - Ansible allows for simple and easy configuration, deployment of applications, security and is easily and quickly scaleable.
 
 The playbook implements the following tasks:
-- Installs Docker and Pip3
+- Installs Docker, Pip3 and Python Docker Modules
 - Increases VM Virtual Memory
-- Downloads, Configures and Launches Containers Elk Servers
+- Download and Launches Containers for Elk Server
+- Enables Docker Services
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+<img width="1404" alt="Screen Shot 2021-12-24 at 12 15 22 PM" src="https://user-images.githubusercontent.com/84400775/147368441-d780db28-626e-4ecf-a400-7ae0239a4648.png">
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- Web 1 10.0.0.7
+- Web 2 10.0.0.8
+- Web 3 10.0.0.10
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+- Filebeats
+- Metricbeats
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- Filebeat collects data logs from specific files or locations on remote machines. Filebeat is 
+- Metricbeats collects metric data from servers and the services operating within the servers.-  _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -104,3 +109,4 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+audit logs, deprecation logs, gc logs, server logs, and slow logs.
