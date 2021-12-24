@@ -37,12 +37,57 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Name</th>
+    <th class="tg-0pky">Function</th>
+    <th class="tg-0pky">IP Address</th>
+    <th class="tg-0pky">Operating System</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Jump Box</td>
+    <td class="tg-0pky">Gateway</td>
+    <td class="tg-0pky">10.0.0.4</td>
+    <td class="tg-0pky">Linux</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Web 1</td>
+    <td class="tg-0pky">Web Server, Docker</td>
+    <td class="tg-0pky">10.0.0.7</td>
+    <td class="tg-0pky">Linux</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Web 2</td>
+    <td class="tg-0pky">Web Server, Docker</td>
+    <td class="tg-0pky">10.0.0.8</td>
+    <td class="tg-0pky">Linux</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Web 3</td>
+    <td class="tg-0pky">Web Server, Docker</td>
+    <td class="tg-0pky">10.0.0.10</td>
+    <td class="tg-0pky">Linux</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Elk</td>
+    <td class="tg-0pky">Elk Stack</td>
+    <td class="tg-0pky">10.1.0.4</td>
+    <td class="tg-0pky">Linux</td>
+  </tr>
+</tbody>
+</table>
+First row is a table header 
 
 ### Access Policies
 
