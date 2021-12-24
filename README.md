@@ -57,21 +57,24 @@ Machines within the network can only be accessed using an asmmetric key from the
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Name          | Public Accessible | Allowed IP Addresses                      |
+|---------------|-------------------|-------------------------------------------|
+| Jump Box      | Yes               | Personal IP                               |
+| Load Balancer | Yes               | Open                                      |
+| Web 1         | No                | Jump Box 10.0.0.4                         |
+| Web 2         | No                | Jump Box 10.0.0.4                         |
+| Web 3         | No                | Jump Box 10.0.0.4                         |
+| Elk Stack     | Yes               | Personal IP via P 5601, SSH from 10.0.0.4 |
 
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+- Ansible allows for simple and easy configuration, deployment of applications, security and is easily and quickly scaleable.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- Installs Docker and Pip3
+- Increases VM Virtual Memory
+- Downloads, Configures and Launches Containers Elk Servers
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
