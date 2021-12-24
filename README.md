@@ -92,7 +92,7 @@ We have installed the following Beats on these machines:
 - Metricbeats
 
 These Beats allow us to collect the following information from each machine:
-- Filebeat collects data logs from specific files or locations on remote machines. Filebeat is 
+- Filebeat collects data logs for observability and security data. Filebeat simplifies the collection, searching and readability of the log data. Auditd is an axample of a service provided by Filebeat. Auditd logs successful and unsecessful login attempts within your system and presents the info in easily readable and understand form.  
 - Metricbeats collects metric data from servers and the services operating within the servers.-  _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 
 ### Using the Playbook
@@ -109,4 +109,4 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-audit logs, deprecation logs, gc logs, server logs, and slow logs.
+
