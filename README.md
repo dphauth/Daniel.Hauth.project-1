@@ -107,14 +107,19 @@ _TODO: Answer the following questions to fill in the blanks:
 There are three configuration files; 
 - [filebeat-playbook.yml](https://github.com/dphauth/Daniel.Hauth/blob/main/Ansible/filebeat-playbook.yml.pdf) 
 - [metricbeat-playbook.yml](https://github.com/dphauth/Daniel.Hauth/blob/main/Ansible/metricbeat.yml.pdf)
-- [install-elk.yml](https://github.com/dphauth/Daniel.Hauth/blob/main/Ansible/install-elk.yml.pdf) 
+- [install-elk.yml](https://github.com/dphauth/Daniel.Hauth/blob/main/Ansible/install-elk.yml.pdf)
+
 Where do you copy it?
 - /etc/ansible/
+
 Which file do you update to make Ansible run the playbook on a specific machine?
 - /etc/ansible/hosts.cfg 
+
 How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 - 
+
 Which URL do you navigate to in order to check that the ELK server is running?
 - Elk-VM-Public-IP:5601/app/kabana
+
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
